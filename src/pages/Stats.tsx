@@ -8,7 +8,8 @@ const Stats = () => {
     useEffect(() => {
         (
             async () => {
-                const {data} = await axios.get('stats');
+
+                const {data} = await axios.get(`order/api/ambassador/stats`);
 
                 setStats(data);
             }

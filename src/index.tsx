@@ -7,7 +7,7 @@ import axios from "axios";
 import {configureStore} from "./redux/configureStore";
 import {Provider} from "react-redux";
 
-axios.defaults.baseURL = 'http://api-gw:8003/';
+axios.defaults.baseURL = 'http://34.29.109.190:8003/';
 
 const store = configureStore()
 
