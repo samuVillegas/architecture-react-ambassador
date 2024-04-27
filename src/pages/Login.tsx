@@ -11,7 +11,7 @@ const Login = () => {
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
 
-        const res = await axios.post(`'auth/api/ambassador/login'`, {
+        const res = await axios.post(`auth/api/ambassador/login`, {
             email,
             password
         });
