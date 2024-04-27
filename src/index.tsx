@@ -8,7 +8,7 @@ import {configureStore} from "./redux/configureStore";
 import {Provider} from "react-redux";
 
 axios.defaults.baseURL = 'http://api-gw:8003/';
-
+axios.defaults.withCredentials = true
 const store = configureStore()
 
 ReactDOM.render(
