@@ -50,7 +50,7 @@ const Products = (props: {
 
     const generate = async () => {
         try {
-            const {data} = await axios.post('order/api/ambassador/links', {
+            const {data} = await axios.post(`order/api/ambassador/links`, {
                 products: selected
             });
 

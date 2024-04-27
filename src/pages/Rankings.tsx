@@ -8,7 +8,8 @@ const Rankings = () => {
     useEffect(() => {
         (
             async () => {
-                const {data} = await axios.get('rankings');
+
+                const {data} = await axios.get(`order/api/ambassador/rankings`);
 
                 setRankings(data);
             }
