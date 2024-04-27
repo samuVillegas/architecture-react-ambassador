@@ -31,7 +31,7 @@ const ProductsBackend = () => {
                     arr.push(`page=${filters.page}`);
                 }
 
-                const {data} = await axios.get(`products/backend?${arr.join('&')}`);
+                const {data} = await axios.get(`'http://34.29.109.190:8003/order/api/ambassador/products/backend?${arr.join('&')}'`);
 
                 setProducts(filters.page === 1 ? data.data : [...products, ...data.data]);
                 setLastPage(data.meta.last_page);

@@ -33,7 +33,7 @@ const Profile = (props: any) => {
     const passwordSubmit = async (e: SyntheticEvent) => {
         e.preventDefault();
 
-        await axios.put('users/password', {
+        await axios.put(`'http://34.29.109.190:8003/auth/api/ambassador/users/password'`, {
             password,
             password_confirm
         })

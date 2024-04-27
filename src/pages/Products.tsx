@@ -50,7 +50,7 @@ const Products = (props: {
 
     const generate = async () => {
         try {
-            const {data} = await axios.post('order/api/ambassador/links', {
+            const {data} = await axios.post('http://34.29.109.190:8003/order/api/ambassador/links', {
                 products: selected
             });
 

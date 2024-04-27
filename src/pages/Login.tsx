@@ -11,10 +11,14 @@ const Login = () => {
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
 
-        await axios.post('auth/api/ambassador/login', {
+        const res = await axios.post('http://34.29.109.190:8003/auth/api/ambassador/login', {
             email,
             password
         });
+
+        const {token} = res.data;
+
+        localStorage.setItem('token', token);
 
         setRedirect(true);
     }

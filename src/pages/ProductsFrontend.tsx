@@ -19,7 +19,7 @@ const ProductsFrontend = () => {
     useEffect(() => {
         (
             async () => {
-                const {data} = await axios.get('products/frontend');
+                const {data} = await axios.get('http://34.29.109.190:8003/order/api/ambassador/products/frontend');
 
                 setAllProducts(data);
                 setFilteredProducts(data);

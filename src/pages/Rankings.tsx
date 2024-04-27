@@ -8,6 +8,7 @@ const Rankings = () => {
     useEffect(() => {
         (
             async () => {
+`'http://34.29.109.190:8003/auth/api/ambassador/users/password'`
                 const {data} = await axios.get('rankings');
 
                 setRankings(data);
